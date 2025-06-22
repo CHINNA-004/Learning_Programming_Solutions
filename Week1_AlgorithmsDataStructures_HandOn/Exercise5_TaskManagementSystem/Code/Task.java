@@ -1,0 +1,20 @@
+package Exercise5_TaskManagementSystem.Code;
+
+public class Task {
+    String taskId;
+    String taskName;
+    String status;
+    Task next;
+
+    public Task(String taskId, String taskName, String status) {
+        this.taskId = taskId;
+        this.taskName = taskName;
+        this.status = status;
+        this.next = null;
+    }
+
+    @Override
+    public String toString() {
+        return taskId + " | " + taskName + " | " + status;
+    }
+}
